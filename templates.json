@@ -3,25 +3,22 @@
     "templates": [
         {
             "type": 1,
-            "title": "Test Container",
-            "name": "test-container",
+            "title": "Refined Test Container",
+            "name": "refined-test-container",
             "categories": [
                 "Testing"
             ],
-            "description": "A minimal test container to check Portainer compatibility.",
-            "note": "This is a simple test template to ensure Portainer can load JSON templates.",
-            "logo": "",
+            "description": "A refined test template to check Portainer compatibility.",
+            "note": "This test includes necessary fields without empty values.",
             "platform": "linux",
             "image": "nginx:latest",
             "ports": [
                 "80:80"
             ],
             "restart_policy": "unless-stopped",
-            "volumes": [],
-            "env": [],
             "repository": {
-                "url": "",
-                "stackfile": ""
+                "url": "https://github.com/portainer/portainer-compose",
+                "stackfile": "docker-compose.yml"
             },
             "maintainer": "Andoy"
         }
